@@ -10,7 +10,7 @@
 // createdAt
 import mongoose from "mongoose";
 
-const revieSchema = new mongoose.Schema({
+const reviewSchema = new mongoose.Schema({
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",

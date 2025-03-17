@@ -25,7 +25,7 @@ export const createTour = async (req, res) => {
       createdBy,
     });
     await tour.save();
-    res.status(201).json({ message: "Trou created", tour });
+    res.status(201).json({ message: "Tour created", tour });
   } catch (error) {
     res.status(400).json({ message: "Error creating Tour", error: error });
   }
